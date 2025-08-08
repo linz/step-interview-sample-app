@@ -20,10 +20,16 @@ Below are instructions on how to run the application, and instructions on what w
 
 ## Running the application
 
+### Prerequisites to run using JDK 11
+![img.png](img.png)
+
 ### Running the API
 
 The API has no external dependencies. It can be run from inside an IDE such as IntelliJ IDEA, or from the command
 line with `gradlew bootRun`.
+or 
+using gralde task 
+![img_1.png](img_1.png)
 
 ### Running the Web Front-end
 
