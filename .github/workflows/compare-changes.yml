@@ -38,7 +38,7 @@ jobs:
 
       - name: Check for both frontend and backend changes
         if: ${{ contains(fromJSON(steps.changed-files.outputs.changes), 'backend') && contains(fromJSON(steps.changed-files.outputs.changes), 'frontend')}}
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             core.setFailed('PR has both FE and BE changes, please split your FE and BE changes into separate PRs')
